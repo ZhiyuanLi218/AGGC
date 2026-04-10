@@ -1,5 +1,8 @@
 # AGGC: Adaptive Group Gradient Clipping for Stabilizing Large Language Model Training
 
+## News
+- [2026.04.7] Congratulations! Our paper has been accepted by ACL 2026.
+- [2026.01.21] The first version of the paper is released on [arXiv](https://arxiv.org/abs/2601.11864).
 ## Introduction
 We introduce Adaptive Group-wise Gradient Clipping (AGGC), a novel optimization strategy formulated to enhance the stability of Large Language Model (LLM) training by mitigating the constraints inherent to traditional global norm clipping techniques. In contrast to conventional methodologies, which often rely on the simplifying assumption of gradient homogeneity across all functional modules and consequently suffer from deleterious spill-over effects, AGGC operates by partitioning model parameters into distinct groups based on their functional attributes. Each group is then regulated independently through the application of an Exponential Moving Average (EMA) of historical gradient norms.
 
@@ -13,8 +16,6 @@ Beyond supervised fine-tuning, AGGC effectively stabilizes reinforcement learnin
 ![LoRA](./assets/Lora.png)
 ![RL](./assets/RL.png)
 ![grad-landscape](./assets/grad_landscape.png)
-## News
-- [2026.01.21] The first version of the paper is released on [arXiv](https://arxiv.org/abs/2601.11864).
 
 ## Quick Start
 
